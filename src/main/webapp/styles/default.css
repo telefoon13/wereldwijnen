@@ -1,0 +1,169 @@
+body {
+	background-color: darkred;
+	font-family: sans-serif;
+	color: #777777;
+	margin-left: 10px;
+	align-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+nav {
+	background-image: url("/images/intro.jpg");
+	overflow: auto;
+	background-repeat: repeat-x;
+	background-position-x: 50%;
+	border: 0;
+	border-radius: 100px;
+	margin: 0 auto;
+}
+nav  a:hover {
+	text-decoration: none;
+}
+
+nav ul,nav ul li ul {
+	list-style: none;
+	display: inline;
+	margin: 0 ;
+	padding: 0;
+}
+
+nav>ul>li {
+	position: relative;
+	display: inline;
+}
+
+h1 {
+	clear: both;
+}
+
+input{
+	margin: 0 auto;
+}
+table{
+	margin: 0 auto;
+}
+table,th,td {
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+
+thead tr,tfoot tr {
+	color: white;
+	background-color: #777777;
+}
+
+th {
+	padding: 0.5em;
+}
+
+tbody tr:nth-child(even) {
+	background-color: burlywood;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: wheat;
+}
+
+tbody tr:hover {
+	background-color: darkred;
+}
+
+label {
+	cursor: pointer;
+}
+
+input,select {
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 1em;
+	margin-top: 0.2em;
+}
+
+input:focus,textarea:focus,select:focus {
+	background-color: #FFFFD6
+}
+
+input[type='checkbox'],input[type='radio'] {
+	display: inline;
+}
+
+label span {
+	background-color: red;
+	border-bottom-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	margin-left: 0.5em;
+	padding: 0.5em;
+	color: white;
+}
+
+label span:empty {
+	display: none;
+}
+
+.zonderbolletjes {
+	list-style: none;
+	margin-bottom: 0.2em;
+	padding: 0;
+}
+
+.zonderbolletjes li {
+	display: inline;
+	margin-right: 0.2em;
+}
+.zonderbolletjes2{
+	list-style: none;
+	margin-bottom: 0.2em;
+	padding: 0;
+}
+
+.zonderbolletjes2 li {
+	margin-right: 0.2em;
+}
+
+#logo {
+	width: 100%;
+}
+
+.knop {
+	text-decoration: none;
+}
+
+@media print {
+	nav {
+		display: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+dt {
+
+}
+
+dd {
+	margin-left: 0;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.pagineren {
+	font-size: x-large;
+}
+
+.menu-balk{
+	background-image: url("/images/intro.jpg");
+	height: 100px;
+	width: 1400px;
+	text-align: center;
+	vertical-align: bottom;
+	display: table-cell;
+}

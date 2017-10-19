@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings version="2.1" xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+    http://java.sun.com/xml/ns/persistence/orm_2_1.xsd">
+
+    <!--LandenEntity-->
+    <named-query name="LandenEntity.findAll">
+        <query>
+            SELECT l FROM LandenEntity l
+            ORDER BY l.id
+        </query>
+    </named-query>
+
+    <!--WijnenEntity-->
+    <named-query name="WijnenEntity.findById">
+        <query>
+            SELECT w FROM WijnenEntity w
+            WHERE w.id = :wijnid
+        </query>
+    </named-query>
+    <embeddable class="be.vdab.valueobjects.BestelbonLijnen"/>
+</entity-mappings>
